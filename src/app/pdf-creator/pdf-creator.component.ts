@@ -62,6 +62,8 @@ export class PdfCreatorComponent implements OnInit {
     //é preciso esperar uma resposta do emitter, p certificar que a instância foi finalizada
     componentRef.instance.emitter.subscribe(() => {
       const config = {
+        filename: 'samy.pdf',
+        jsPDF: {  orientation: 'landscape' },
         html2canvas: {
           scale: 1,
           scrollX: 0,
@@ -77,11 +79,11 @@ export class PdfCreatorComponent implements OnInit {
 
   //o método print vai usar a instância criada pra gerar o pdf
  //método print, que utiliza a biblioteca html2pdf para gerar um pdf
-  private print(content: any, config: any): void {
+  private print(alement: any, config: any): void {
     html2pdf()
       .set(config)
-      .from(content)
-      .toPdf()
+      .from(alement) //from define a origem (nesse caso o elemento html)
+      .toPdf()       //converte a origem no destino especificado
       .outputPdf('dataurlnewwindow');
   }
 }

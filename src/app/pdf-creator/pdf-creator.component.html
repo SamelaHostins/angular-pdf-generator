@@ -1,11 +1,11 @@
 <!-- fica toda a lógica de criação e onde o usuário poderá escolher os dados que aparecerão no PDF -->
 <section class="example-section">
-    <h1>Selecione os carros que devem aparecer na tabela de preço:</h1>
+    <h1>Selecione os nomes:</h1>
     <div *ngFor="let item of priceList">
         <mat-checkbox class="example-margin" [(ngModel)]="item.checked">{{ item.name }}</mat-checkbox>
     </div>
 
-    <button mat-raised-button color="primary" class="btn" (click)="selectItems()">Gerar PDF!</button>
+    <button mat-raised-button color="primary" class="btn" (click)="selectItems()">Emitir Certificado</button>
 </section>
 
 <div #priceListPDF></div>
