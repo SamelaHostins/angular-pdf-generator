@@ -1,17 +1,17 @@
+
+<!-- sera o template do PDF -->
 <div style="margin: 0 100px;">
   <h1>{{title}}</h1>  
   <table>
     <tr>
       <th>Nome</th>
-      <th>Imagem</th>
-      <th>Marca</th>
-      <th>Preço</th>
+      <th>Curso</th>
+      <th>Data</th>
     </tr>
     <tr *ngFor="let car of priceList">
       <td>{{car.name}}</td>
-      <td><a [href]="car.image">Foto</a></td>
-      <td>{{car.brand}}</td>
-      <td>{{car.price | currency}}</td>
+      <td>{{car.curso}}</td>
+      <td>{{car.data}}</td>
     </tr>
   </table>
 </div>

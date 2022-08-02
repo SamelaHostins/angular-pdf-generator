@@ -7,10 +7,16 @@ import { AfterViewInit, Component, EventEmitter, OnInit } from '@angular/core';
 })
 export class PdfPageComponent implements OnInit, AfterViewInit {
 
-  priceList: {name: string, image: string, brand: string, price: number, checked: boolean}[];
+  //Aqui ficarão os atributos que recebreão as informações que serão inseridas no PDF criado
+
+  //atributo que receberá a lista de carros selecionados 
+  priceList: {name: string, curso: string, data: string, checked: boolean}[];
+  //receberá o titulo da página
   title: string;
 
-  emitter: EventEmitter<void> = new EventEmitter();
+  //avisa qd as informações terminarem de ser processadas no hrml, para que o 
+  //html2pdf possa criar o arquivo PDF
+  emitter: EventEmitter<void> = new EventEmitter();0
 
   constructor(
 
