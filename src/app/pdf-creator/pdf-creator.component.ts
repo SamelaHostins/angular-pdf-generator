@@ -44,9 +44,12 @@ export class PdfCreatorComponent implements OnInit {
 
   //função que o botão 'gerar pdf' chama
   selectItems(): void {
-    const title = '';
+    const title = 'Teste de titulo';
 
-    this.createPDF(title, this.priceList.filter(car => car.checked));
+    //com filtro
+    //this.createPDF(title, this.priceList.filter(car => car.checked));
+    //sem filtro p gerar pdf da pagina
+    this.createPDF(title, this.priceList);
   }
 
   //Lógica de gerar o pdf:

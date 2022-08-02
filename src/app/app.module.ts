@@ -8,11 +8,15 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
+import { CertificadoComponent } from './certificado/certificado.component';
+import { PdfCertificadoComponent } from './pdf-certificado/pdf-certificado.component';
 @NgModule({
   declarations: [
     AppComponent,
     PdfPageComponent,
-    PdfCreatorComponent
+    PdfCreatorComponent,
+    CertificadoComponent,
+    PdfCertificadoComponent
   ],
   imports: [
     BrowserModule,

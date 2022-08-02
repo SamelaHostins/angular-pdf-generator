@@ -1,0 +1,27 @@
+.card {
+    margin: 65px 50px 40px 145px; //top, right, bottom, left
+    align-items: center;
+    width: 50rem;
+    height: 40em;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 2px solid rgba(0, 0, 0, 0.11);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: rgb(210, 240, 241);
+  }
+
+  h3 {
+    font-size: 4rem;
+    color: #000000;
+  }
+
+  .nome {
+    color: #000000;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0 0 0 15px;      //valores: top, right, bottom, left, px para ajustes pequenos, grande: rem, em
+  }
